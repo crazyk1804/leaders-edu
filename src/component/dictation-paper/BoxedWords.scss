@@ -1,0 +1,44 @@
+.question-word-wrapper {
+	display: inline-block;
+
+	&.eng {
+		.question-letter {
+			&:after {
+				content: '';
+				width: 100%;
+				//background-color: #adadad;
+				border-top: solid 1px #adadad;
+				height: 1px;
+				position: absolute;
+				top: 42px;
+				left: 0;
+			}
+		}
+	}
+}
+
+//.question-word-wrapper + .question-word-wrapper {
+//    margin-left: 1em;
+//    margin-top: 1em;
+//}
+
+.question-letter {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 1px #989898;
+	width: 2em;
+	height: 2em;
+	font-size: 2em;
+
+	label {
+		&:after {
+			content: '\200b'
+		}
+	}
+}
+
+.question-letter + .question-letter {
+	border-left: 0;
+}
