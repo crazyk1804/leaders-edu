@@ -26,7 +26,8 @@
 		"web-vitals": "^2.1.4"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "export PORT=9999 && react-scripts start",
+		"back": "nohup yarn start > /dev/null 2>&1 &",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"

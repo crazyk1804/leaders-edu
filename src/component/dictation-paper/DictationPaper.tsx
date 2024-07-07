@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const DictationPaper = ({ questions, mode }: Props) => {
-	const width = useRef<number>(12);
+	const width = useRef<number>(10);
 
 	const getDictationLines = (): Array<Array<string>> => {
 		const lines: Array<Array<string>> = [[]];
